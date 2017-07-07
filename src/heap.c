@@ -196,8 +196,8 @@ float cost(int type, int tarrif, int duration, char *file_config_name)
 
 	if ((config_file = fopen(file_config_name, "r")) == NULL)
 		{
-        printf("Error! opening file");
-        return -2;         
+		printf("Error! opening file");
+		return -2;         
 		}
 	
 	//Parse data from config file

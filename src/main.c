@@ -62,8 +62,8 @@ int main(int argc, char* argv[])
 	
 	if ((input_file = fopen(file_input_name, "r")) == NULL)
 		{
-        printf("Error! opening file\n");
-        return -2;         
+		printf("Error! opening file\n");
+		return -2;         
 		}
 		
 	//Parse data from input file	

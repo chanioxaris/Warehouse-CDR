@@ -17,22 +17,22 @@ int hash_function(char *K, int size)
 //Return number of words in string	
 int countWords(char *str)
 	{
-    int state = 1, count = 0;
+	int state = 1, count = 0;
  
-    //Scan string character by character 
-    while (*str)
+	//Scan string character by character 
+	while (*str)
 		{
-        //If next character is a separator, set the state as OUT
-        if (*str == ' ' || *str == '\n' || *str == '\t')			
-            state = 1; 			
-        else if (state)
+		//If next character is a separator, set the state as OUT
+		if (*str == ' ' || *str == '\n' || *str == '\t')			
+			state = 1; 			
+		else if (state)
 			{
-            state = 0;
-            count++;
+			state = 0;
+			count++;
 			}
-        ++str;
+		++str;
 		}
-    return count;
+	return count;
 	}	
 
 
@@ -803,9 +803,7 @@ void print(hash_table *hashtable)
 		tmp_bucketcaller = hashtable->table[i];
 		
 		if (tmp_bucketcaller == NULL)
-			{
 			printf(" --------- There is no record for hash index %d --------- \n", i);
-			}
 		else
 			{				
 			printf(" --------- Record(s) for hash index %d ---------\n", i);	
@@ -848,9 +846,7 @@ void print(hash_table *hashtable)
 										}							
 									}							
 								if (tmp_bucketinfocaller->next == NULL)
-									{
 									break;	
-									}
 									
 								tmp_bucketinfocaller = tmp_bucketinfocaller->next;	
 								}
@@ -858,9 +854,8 @@ void print(hash_table *hashtable)
 						}						
 					}
 				if (tmp_bucketcaller->next == NULL)
-					{
 					break;	
-					}					
+				
 				tmp_bucketcaller = tmp_bucketcaller->next;	
 				}
 			}
@@ -879,7 +874,8 @@ void topdest(hash_table *hashtable1, char *originator_number)
 	
 	if (hashtable1 == NULL)
 		{
-		printf("No calls found\n");	
+		printf("No calls found\n");
+		return;
 		}
 
 	bucket_caller *tmp_bucketcaller;
@@ -1082,9 +1078,8 @@ int relation(hash_table * hashtable2, char *caller1, char *caller2)
 				}
 			}	
 		if (tmp_bucketcaller->next == NULL)
-				{
 				return 1;	
-				}
+			
 		tmp_bucketcaller = tmp_bucketcaller->next;		
 		}			
 	}
@@ -1161,9 +1156,8 @@ void indist(hash_table * hashtable1, hash_table * hashtable2, char *caller1, cha
 						}						
 					}
 				if (tmp_bucketcaller->next == NULL)
-					{
 					break;	
-					}					
+					
 				tmp_bucketcaller = tmp_bucketcaller->next;	
 				}
 			}
@@ -1237,8 +1231,7 @@ void bye(hash_table *hashtable)
 				tmp_bucketcaller = tmp_bucketcaller->next;
 				
 				if (tmp_bucketcaller == NULL)												
-					break;	
-												
+					break;													
 				}
 			}
 		}
@@ -1264,7 +1257,7 @@ int date(int day, int day1, int day2, int month, int month1, int month2, int yea
 	if (date > date1 && date < date2)
 		return 1;		
 	else if (date == date2 || date == date1)
-	    return 2;		
+		return 2;		
 	
 	return 0;
 	}
@@ -1278,7 +1271,7 @@ int time(int hour, int hour1, int hour2, int min, int min1, int min2)
 	int time2 = 100 * hour2 + min2;
 
 	if (time >= time1 && time <= time2)
-        return 1;
+		return 1;
 			
 	return 0;
 	}
