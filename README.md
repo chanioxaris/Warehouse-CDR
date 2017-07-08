@@ -20,7 +20,7 @@ Each CDR record contains the following fields separated by ";" delimiter:
 
 ### Hashtables
 
-Two hash tables are used from the program, where in the first caller number (originator-number) is used as a key and in the second one callee number (destination-number) is used as a key. For each hash table two bucket layers are used. The first layer (blue and ligth blue buckets) includes the caller or callee number after hashing function and the second layer (pink and light pink buckets) contains the CDR record. Each distinct number owns it's own second layer structure. If a bucket become full, another one is dynamically created using the implementation of [linked lists](https://en.wikipedia.org/wiki/Linked_list).
+Two hash tables are used from the program, where in the first caller number (originator-number) is used as a key and in the second one callee number (destination-number) is used as a key. For each hash table two bucket layers are used. The first layer (blue and ligth blue buckets) includes the caller or callee number after hashing function and the second layer (pink and light pink buckets) contains the CDR record. Each distinct number on the warehouse owns it's own second layer structure. If a bucket become full, another one is dynamically created using the implementation of [linked lists](https://en.wikipedia.org/wiki/Linked_list).
 
 The below image describes the hash tables structure.
 
