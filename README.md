@@ -27,23 +27,23 @@ Each CDR record contains the following fields separated by ";" delimiter:
 ## Interface description
 
 A user can perform the following operations:
-- #### cdr-uniq-id
+- #### insert [CDR record]
 Identifier of specific call.
-- #### cdr-uniq-id
+- #### delete [caller number] [cdr ID]
 The number that is making the call.
-- #### cdr-uniq-id
+- #### find [caller number] [time1][year1] [time2][year2]
 The number that is being called.
-- #### cdr-uniq-id
+- #### lookup [callee number] [time1][year1] [time2][year2]
 Date of call (DDMMYYYY where DD is the day, MM is the month and YYYY is the year).
-- #### cdr-uniq-id
+- #### indist1 [caller number 1] [caller number 2]
 Start time of call (HH:MM where HH is the hour and MM is the minute, in 24-hour time system).
-- #### cdr-uniq-id
+- #### topdest [caller number]
 Duration of call in minutes.
-- #### cdr-uniq-id
+- #### top [percentage]
 Type of call (SMS, voice, data, etc.).
-- #### cdr-uniq-id
+- #### print hashtable[X]
 Invoice of specific call.
-- #### cdr-uniq-id
+- #### bye
 Identifier of problem that might occured.
 
 
