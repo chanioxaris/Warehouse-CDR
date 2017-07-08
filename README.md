@@ -20,9 +20,12 @@ Each CDR record contains the following fields separated by ";" delimiter:
 
 ### Hashtables
 
+![Hashtables](https://github.com/chanioxaris/Warehouse-CDR/blob/master/img/structure.png)
 
 ### Heap
 
+
+![Heap](https://github.com/chanioxaris/Warehouse-CDR/blob/master/img/heap.png)
 
 ## Interface description
 
