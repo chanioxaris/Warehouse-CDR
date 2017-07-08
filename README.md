@@ -7,8 +7,8 @@ Each CDR record contains the following fields separated by ";" delimiter:
 - **cdr-uniq-id**: Identifier of specific call.
 - **originator-number**: The number that is making the call.
 - **destination-number**: The number that is being called.
-- **date**: Date of call (DDMMYYYY where DD is the day, MM the month and YYYY the year).
-- **init-time**: Start time of call (HH:MM where HH is the hour and MM the minute in 24-hour).
+- **date**: Date of call (DDMMYYYY where DD is the day, MM is the month and YYYY is the year).
+- **init-time**: Start time of call (HH:MM where HH is the hour and MM is the minute, in 24-hour time system).
 - **duration**: Duration of call in minutes.
 - **type**: Type of call (SMS, voice, data, etc.).
 - **tarrif**: Invoice of specific call.
