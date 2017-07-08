@@ -28,23 +28,23 @@ Each CDR record contains the following fields separated by ";" delimiter:
 
 A user can perform the following operations:
 - #### insert [CDR record]
-Identifier of specific call.
-- #### delete [caller number] [cdr ID]
-The number that is making the call.
+Insert a CDR record into the warehouse.
+- #### delete [caller number] [CDR ID]
+Delete the record with CDR ID made from caller number.
 - #### find [caller number] [time1][year1] [time2][year2]
-The number that is being called.
+Find all records from caller number made between this specific time and year.
 - #### lookup [callee number] [time1][year1] [time2][year2]
-Date of call (DDMMYYYY where DD is the day, MM is the month and YYYY is the year).
+Find all records to callee number made between this specific time and year.
 - #### indist1 [caller number 1] [caller number 2]
-Start time of call (HH:MM where HH is the hour and MM is the minute, in 24-hour time system).
+Find all customers that call both caller number 1 and caller number 2.
 - #### topdest [caller number]
-Duration of call in minutes.
-- #### top [percentage]
-Type of call (SMS, voice, data, etc.).
+Find the top country code, called from caller number.
+- #### top [k]
+Print all callers number that created the top-k% of company's total income.
 - #### print hashtable[X]
-Invoice of specific call.
+Print the content of hashtableX (e.g print hashtable1, print hashtable2).
 - #### bye
-Identifier of problem that might occured.
+Destroy everything and free the memory of structures.
 
 
 ## Compile
