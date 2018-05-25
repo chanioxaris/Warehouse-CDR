@@ -11,16 +11,16 @@ typedef struct _heap_
 	struct _info_heap_ **node;
 	}heap;
 
-	
+
 typedef struct _info_heap_
 	{
 	char info_heap_number[15];
 	float amount;
-	}info_heap;	
-	
+	}info_heap;
+
 
 heap *heap_init();
-	
+
 void insert_heap(heap *, char *, float);
 
 void heapify(heap *, int);
@@ -36,5 +36,3 @@ void bye_heap(heap *maxheap);
 void display(heap *);
 
 #endif
-
-
