@@ -3,20 +3,18 @@
 
 
 //Binary Max Heap
-typedef struct _heap_
-	{
+typedef struct _heap_ {
 	int position;
 	int entries;
 	float income;
 	struct _info_heap_ **node;
-	}heap;
+}heap;
 
 
-typedef struct _info_heap_
-	{
+typedef struct _info_heap_ {
 	char info_heap_number[15];
 	float amount;
-	}info_heap;
+}info_heap;
 
 
 heap *heap_init();
