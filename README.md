@@ -25,7 +25,7 @@ Two hash tables are used from the program, where in the first caller number (ori
 The below image describes the hash tables structure.
 
 
-![Hashtables](https://github.com/chanioxaris/Warehouse-CDR/blob/master/img/structure.png)
+![Hashtables](https://github.com/chanioxaris/warehouse/blob/master/img/structure.png)
 
 ### Heap
 
@@ -33,7 +33,7 @@ A binary max heap is used from the program which each node, one for each number 
 
 The below image describes the heap structure.
 
-![Heap](https://github.com/chanioxaris/Warehouse-CDR/blob/master/img/heap.png)
+![Heap](https://github.com/chanioxaris/warehouse/blob/master/img/heap.png)
 
 ## Interface description
 
